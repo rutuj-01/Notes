@@ -1,12 +1,13 @@
 <template>
   <div >
-    <List/>
+    <!-- <List/> -->
+  <Card/>
   </div>
 </template>
 
 <script>
-
-import List from './components/List.vue'
+import Card from './components/Card.vue'
+// import List from './components/List.vue'
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
@@ -20,7 +21,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css"
 
 export default {
   components: {
-    List
+      Card
+    // List
   }
 }
 </script>

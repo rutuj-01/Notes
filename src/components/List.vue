@@ -1,4 +1,3 @@
-
 <template>
 	<div class="container">
 	<!-- <b-alert show >Primary Alert</b-alert> -->
@@ -7,9 +6,7 @@
     <b-badge variant="light" >{{ counter }}</b-badge>
 	</b-button>
 	<b-form >
-      <b-form-group
-        label="Item"
-      >
+      <b-form-group label="Item">
         <b-form-input
           id="input-1"
           type="text"
@@ -21,11 +18,9 @@
 	<b-button variant="success" style="margin-left: 450px;" @click.prevent= "add()" :disabled="check" >+Add</b-button>
 	<br>
 	List items
-	
 	<b-list-group>
 	<b-list-group-item v-for="(item,index) in items" :key="index" style="text-align: center;">
 		{{ item }}
-
 	</b-list-group-item>
 	</b-list-group>
 	</div>
@@ -35,8 +30,7 @@
 		export default{
 			data(){
 				return { 
-					name : '',
-					
+					name : '',					
 					items: []
 				}
 			},
