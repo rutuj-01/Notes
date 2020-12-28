@@ -5,9 +5,9 @@
 			<div class="col-4">
 				<b-img :src=" laptop.img" fluid alt="Responsive image"></b-img>
 				Name is :{{ laptop.Iname }}
-				<br>
+			
 				Specs are : {{ laptop.specs }}
-				<br>
+				
 				Stock Status: {{ laptop.stock }}
 			</div>
 		</div>
