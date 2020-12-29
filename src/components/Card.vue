@@ -1,19 +1,23 @@
 <template>
 	<div class="container"  >
-		<!-- {{ laptops }} -->
-		<div class="row"  style="margin-top: 30px;">
-			<div class="col-4" v-for="(laptop,index) in laptops" :key="index">
-				<ProductCard :laptopData="laptop" />
-			</div>
-		</div>
+		{{ Users }}
+		<!-- <div class="row"  style="margin-top: 30px;">
+			<div class="col-4"> -->
+				
+				<Users />
+				<!-- <ProductCard :laptopData="laptop" /> -->
+			<!-- </div> -->
+		<!-- </div> -->
 	</div>
 </template>
 
 <script>
-	import ProductCard from './ProductCard'
+	// import ProductCard from './ProductCard'
+	import Users from './Users'
 	export default{
 		components:{
-			ProductCard
+			// ProductCard,
+			Users
 		},
 		data(){
 			return{
