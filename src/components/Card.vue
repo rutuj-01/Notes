@@ -1,21 +1,20 @@
 <template>
 	<div class="container"  >
 		<!-- {{ laptops }} -->
-		<div class="row" v-for="(laptop,index) in laptops" :key="index" style="margin-top: 30px;">
-			<div class="col-4">
-				<b-img :src=" laptop.img" fluid alt="Responsive image"></b-img>
-				Name is :{{ laptop.Iname }}
-			
-				Specs are : {{ laptop.specs }}
-				
-				Stock Status: {{ laptop.stock }}
+		<div class="row"  style="margin-top: 30px;">
+			<div class="col-4" v-for="(laptop,index) in laptops" :key="index">
+				<ProductCard :laptopData="laptop" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import ProductCard from './ProductCard'
 	export default{
+		components:{
+			ProductCard
+		},
 		data(){
 			return{
 				laptops:[{
@@ -30,7 +29,6 @@
 					img:'https://images.unsplash.com/photo-1520155346-36773ab29479?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80',
 					stock:'4'
 				}]
-
 			}
 
 		}
